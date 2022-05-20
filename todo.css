@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(243, 164, 164);
+}
+h1{
+    font-size: 3rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#container{
+    border: 5px solid #000;
+    width: 500px;
+    height: 150px;
+    position: relative;
+}
+#container input {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+#container button {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    background: rgb(204, 191, 7);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+#todo-list{
+    width: 500px;
+    height: auto;
+    border: 5px solid rgb(68, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+#todo-list li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 8px;
+}
+.Div{
+    display: flex;
+    /* background: fuchsia; */
+}
+.done-btn{
+    width: 50px;
+    height: 25px;
+    background: chartreuse;
+    margin: 8px;
+}
+.del-btn{
+    width: 50px;
+    height: 25px;
+    background: crimson;
+    margin: 8px;
+}
+
+.task-done {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
